@@ -1,0 +1,245 @@
+2023-07-20 06:13:27 error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [1045] Access denied for user 'Tech guy'@'localhost' (using password: NO) in D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 98
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:158
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:163
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:469
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\CakeAdapter.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:83
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php:64
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\Migrate.php:85
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Command\Command.php:312
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:1022
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:314
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:168
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\BaseCommand.php:189
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\Smartmine project\public_html\cakeApis\test_api2\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'Tech guy'@'localhost' (using password: NO) in D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 86
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:86
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:158
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:163
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:469
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\CakeAdapter.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:83
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php:64
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\Migrate.php:85
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Command\Command.php:312
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:1022
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:314
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:168
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\BaseCommand.php:189
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\Smartmine project\public_html\cakeApis\test_api2\bin\cake.php:12
+
+2023-07-20 06:14:55 error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 98
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:158
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:163
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:469
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\CakeAdapter.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:83
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php:64
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\Migrate.php:85
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Command\Command.php:312
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:1022
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:314
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:168
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\BaseCommand.php:189
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\Smartmine project\public_html\cakeApis\test_api2\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 86
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:86
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:158
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:163
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:469
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\CakeAdapter.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:83
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php:64
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\Migrate.php:85
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Command\Command.php:312
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:1022
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:314
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:168
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\BaseCommand.php:189
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\Smartmine project\public_html\cakeApis\test_api2\bin\cake.php:12
+
+2023-07-20 06:15:55 error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 98
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:158
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:163
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:469
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\CakeAdapter.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:83
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php:64
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\Migrate.php:85
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Command\Command.php:312
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:1022
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:314
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:168
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\BaseCommand.php:189
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\Smartmine project\public_html\cakeApis\test_api2\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 86
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:86
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:158
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:163
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:469
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\CakeAdapter.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:83
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php:64
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\Migrate.php:85
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Command\Command.php:312
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:1022
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:314
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:168
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\BaseCommand.php:189
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\Smartmine project\public_html\cakeApis\test_api2\bin\cake.php:12
+
+2023-07-20 06:21:54 error: [InvalidArgumentException] There was a problem creating the schema table: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected in D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AbstractAdapter.php on line 317
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:133
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:160
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:163
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:469
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\CakeAdapter.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:83
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php:64
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\Migrate.php:85
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Command\Command.php:312
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:1022
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:314
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:168
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\BaseCommand.php:189
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\Smartmine project\public_html\cakeApis\test_api2\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected in D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 192
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:192
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:358
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Plan\Plan.php:146
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:719
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:615
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Table.php:688
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AbstractAdapter.php:315
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:133
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:160
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:163
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:469
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\CakeAdapter.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:83
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php:64
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\Migrate.php:85
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Command\Command.php:312
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:1022
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:314
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:168
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\BaseCommand.php:189
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\Smartmine project\public_html\cakeApis\test_api2\bin\cake.php:12
+
+2023-07-20 06:28:48 error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for host failed: No such host is known.  in D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 98
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:158
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:163
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:469
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\CakeAdapter.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:83
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php:64
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\Migrate.php:85
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Command\Command.php:312
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:1022
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:314
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:168
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\BaseCommand.php:189
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\Smartmine project\public_html\cakeApis\test_api2\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for host failed: No such host is known.  in D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 86
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:86
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:158
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:163
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:469
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\CakeAdapter.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:83
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php:64
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\Migrate.php:85
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Command\Command.php:312
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:1022
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:314
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:168
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\BaseCommand.php:189
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\Smartmine project\public_html\cakeApis\test_api2\bin\cake.php:12
+
+Caused by: [PDOException] PDO::__construct(): php_network_getaddresses: getaddrinfo for host failed: No such host is known.  in D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 86
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:86
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php:158
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php:163
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php:469
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\CakeAdapter.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:83
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php:64
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\CommandTrait.php:37
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\Phinx\Migrate.php:85
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Command\Command.php:312
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:1022
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:314
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\symfony\console\Application.php:168
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:126
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\BaseCommand.php:189
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\migrations\src\Command\MigrationsCommand.php:198
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:334
+- D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Console\CommandRunner.php:172
+- D:\Smartmine project\public_html\cakeApis\test_api2\bin\cake.php:12
+
