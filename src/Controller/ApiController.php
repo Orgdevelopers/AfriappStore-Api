@@ -285,6 +285,15 @@ class ApiController extends AppController
     }
 
 
+    public function publishApp(){
+        $this->checkParams(['app_name','description','long_description']);
+
+        $app_icon = null; // $_FILES['tmp']['app_icon'];
+
+        $this->loadModel('ReviewApps');
+
+    }
+
     public function checkParams($params_names)
     {
         foreach ($params_names as $key => $params_name) {

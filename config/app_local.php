@@ -44,9 +44,9 @@ return [
              */
             //'port' => 'non_standard_port_number',
 
-            'username' => 'afriapp_store',
-            'password' => 'afriapp_store',
-            'database' => 'afriapp_store',
+            'username' => 'root',
+            'password' => '',
+            'database' => 'test',
 
             /*
              * If not using the default 'public' schema with the PostgreSQL driver

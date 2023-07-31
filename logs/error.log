@@ -5396,3 +5396,156 @@ Stack Trace:
 
 Request URL: /api/showAppDetails?app_id=1
 Client IP: 127.0.0.1
+2023-07-30 04:09:19 error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [1045] Access denied for user 'afriapp_store'@'localhost' (using password: YES) in D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver.php on line 133
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [1045] Access denied for user \'afriapp_store\'@\'localhost\' (using password: YES)',
+)
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Connection.php:418
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Table.php:520
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Query.php:290
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Query.php:184
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Table.php:1714
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Table.php:1269
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\src\Controller\ApiController.php:225
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:86
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:67
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php:40
+
+Caused by: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'afriapp_store'@'localhost' (using password: YES) in D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver.php on line 121
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver.php:121
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver.php:131
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Connection.php:418
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Table.php:520
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Query.php:290
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Query.php:184
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Table.php:1714
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Table.php:1269
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\src\Controller\ApiController.php:225
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:86
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:67
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php:40
+
+Request URL: /api/showAllUsers
+2023-07-30 04:09:26 error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [1045] Access denied for user 'afriapp_store'@'localhost' (using password: YES) in D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver.php on line 133
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [1045] Access denied for user \'afriapp_store\'@\'localhost\' (using password: YES)',
+)
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Connection.php:418
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Table.php:520
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Query.php:290
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Query.php:184
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Table.php:1714
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Table.php:1269
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\src\Controller\ApiController.php:225
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:86
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:67
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php:40
+
+Caused by: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'afriapp_store'@'localhost' (using password: YES) in D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver.php on line 121
+Stack Trace:
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver.php:121
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver.php:131
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Database\Connection.php:418
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Table.php:520
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Query.php:290
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Query.php:184
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Table.php:1714
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\ORM\Table.php:1269
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\src\Controller\ApiController.php:225
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:86
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:82
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php:67
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php:90
+- D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php:40
+
+Request URL: /api/showAllUsers
+Client IP: 192.168.43.224
