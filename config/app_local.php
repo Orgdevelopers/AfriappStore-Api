@@ -44,9 +44,9 @@ return [
              */
             //'port' => 'non_standard_port_number',
 
-            'username' => 'fucxjtyu_afriappstore',
-            'password' => 'fucxjtyu_afriappstore',
-            'database' => 'fucxjtyu_afriappstore',
+            'username' => 'afriapp_store',
+            'password' => 'afriapp_store',
+            'database' => 'afriapp_store',
 
             /*
              * If not using the default 'public' schema with the PostgreSQL driver
@@ -85,10 +85,10 @@ return [
      */
     'EmailTransport' => [
         'default' => [
-            'host' => env('MAIL_HOST',''),
-            'port' => env('MAIL_PORT',''),
-            'username' => env('MAIL_USERNAME',''),
-            'password' => env('MAIL_PASSWORD',''),
+            'host' => 'mail.afriappstore.com',
+            'port' => '465',
+            'username' => 'no-reply@afriappstore.com',
+            'password' => 'no-reply@afriappstore.com',
             'client' => null,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],

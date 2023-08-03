@@ -103,6 +103,40 @@ class Utility {
     }
 
 
+    public static function EncryptPassword($password){
+
+        $privateKey 	= 'AF5R6I6565A65P5P8S897T654321O321R2E56P8RI5V88A8TE6KEY65S5A8F8E';
+        $secretKey 		= 'af2r5i8a8pp5S59t9o9r6es3e3c9r9et';
+        $encryptMethod      = "AES-256-CBC";
+        $string 		= $password;
+
+        $key = hash('sha256', $privateKey);
+        $ivalue = substr(hash('sha256', $secretKey), 0, 16); // sha256 is hash_hmac_algo
+        $result = openssl_encrypt($string, $encryptMethod, $key, 0, $ivalue);
+        $output = base64_encode($result);  // output is a encripted value
+
+        return $output;
+
+    }
+
+
+    public static function DecryptPassword($password){
+
+        $privateKey 	= 'AF5R6I6565A65P5P8S897T654321O321R2E56P8RI5V88A8TE6KEY65S5A8F8E';
+        $secretKey 		= 'af2r5i8a8pp5S59t9o9r6es3e3c9r9et';
+        $encryptMethod      = "AES-256-CBC";
+        $stringEncrypt      = $password;
+
+        $key    = hash('sha256', $privateKey);
+        $ivalue = substr(hash('sha256', $secretKey), 0, 16); // sha256 is hash_hmac_algo
+
+        $output = openssl_decrypt(base64_decode($stringEncrypt), $encryptMethod, $key, 0, $ivalue);
+
+        return $output;
+
+    }
+
+
 }
 
 ?>

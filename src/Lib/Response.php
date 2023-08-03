@@ -7,7 +7,7 @@ class Response {
         echo json_encode(array('code'=>200,'msg'=>$msg));
     }
 
-    public static function apiMissing($msg = '')
+    public static function AuthorizationRevoked($msg = '')
     {
         echo json_encode(array('code'=>401,'msg'=>'Unauthorized-'.$msg));
     }

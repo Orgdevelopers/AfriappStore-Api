@@ -2075,3 +2075,560 @@ Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\vend
 Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\vendor\cakephp\cakephp\src\Http\Server.php, line 90
 [main] D:\Smartmine project\public_html\cakeApis\test_api2\webroot\index.php, line 40
 
+2023-08-01 10:09:55 notice: Undefined property: ApiController::$Users in D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\src\Controller\ApiController.php on line 333
+Request URL: /api/signup
+Trace:
+Cake\Controller\Controller::__get() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 329
+App\Controller\ApiController::signup() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\src\Controller\ApiController.php, line 333
+Cake\Controller\Controller::invokeAction() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-01 10:24:40 notice: Undefined property: ApiController::$User in D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\src\Controller\ApiController.php on line 343
+Request URL: /api/signup?email=email2@email.com&password=123456&first_name=test&last_name=user
+Trace:
+Cake\Controller\Controller::__get() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 329
+App\Controller\ApiController::signup() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\src\Controller\ApiController.php, line 343
+Cake\Controller\Controller::invokeAction() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 03:30:52 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /templates/email/html/default.php
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 03:30:52 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /templates/email/html/default.php
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 03:33:26 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /v
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 03:33:26 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /v
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 03:38:07 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/email_templates/verification_email_template.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 03:38:07 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/email_templates/verification_email_template.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:12:27 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:12:27 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:12:59 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:12:59 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:14:41 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:14:41 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:14:42 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:14:42 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:14:42 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:14:42 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:14:43 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:14:43 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:14:43 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:14:43 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:14:43 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:14:43 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:15:02 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 06:15:02 notice: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+Request URL: /webroot/uploads/emali_templates/verification_email.html
+Trace:
+strpos [internal], line ??
+include D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\templates\Error\missing_controller.php, line 24
+Cake\View\View::_evaluate() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Renderer\WebExceptionRenderer.php, line 292
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 162
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 135
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+
+2023-08-02 11:52:10 notice: Creation of dynamic property App\Model\Table\UsersTable::$id is deprecated
+Request URL: /api/verifyEmail
+Trace:
+App\Controller\ApiController::verifyEmail() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\src\Controller\ApiController.php, line 485
+Cake\Controller\Controller::invokeAction() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+DebugKit\Middleware\DebugKitMiddleware::process() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] D:\Smartmine project\public_html\cakeApis\test_api2\AfriappStore-Api\webroot\index.php, line 40
+

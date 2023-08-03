@@ -208,6 +208,95 @@ class ApiController extends AppController
 
     }
 
+
+    public function showAllAfriApps(){
+        $this->loadModel('Apps');
+
+        $page = 0;
+        $records_count = ADMIN_RECORDS_PER_PAGE;
+
+        if(isset($this->params['page'])){
+            $page = $this->params['page'];
+        }
+
+        if(isset($this->params['records_count'])){
+            $records_count = $this->params['records_count'];
+        }
+
+        $apps = $this->Apps->find('all',array(
+            'conditions' => array('Apps.is_afri_app' => 1),
+            'offset' => $records_count*$page,
+            'limit' => $records_count,
+            //'contain' => array('Users','Reviews','AppImages'),
+        ));
+
+        Response::success($apps);
+        die;
+
+    }
+
+
+    // public function showAfriApps(){
+    //     $this->loadModel('AfriApps');
+
+    //     $page = 0;
+    //     $records_count = ADMIN_RECORDS_PER_PAGE;
+
+    //     if(isset($this->params['page'])){
+    //         $page = $this->params['page'];
+    //     }
+
+    //     if(isset($this->params['records_count'])){
+    //         $records_count = $this->params['records_count'];
+    //     }
+
+    //     $apps = $this->AfriApps->find('all',array(
+    //         'offset' => $records_count*$page,
+    //         'limit' => $records_count,
+    //         //'contain' => array('Users','Reviews','AppImages'),
+    //     ));
+
+    //     Response::success($apps);
+    //     die;
+
+    // }
+
+
+    // public function showAfriAppDetails(){
+    //     $this->checkParams(['app_id']);
+
+    //     $this->loadModel('AfriApps');
+    //     $this->loadModel('Reviews');
+
+    //     $id = $this->params['app_id'];
+
+    //     $details = $this->AfriApps->find('all',array(
+    //         'conditions' => array('AfriApps.id' => $id),
+    //         'contain' => array('AppImages','LongDescription')
+    //     ))->first();
+
+    //     if($details){
+    //         $reviews = $this->Reviews->find('all',array(
+    //             'conditions' => array('Reviews.app_id' => $id),
+    //             'contain' => array('Users'),
+    //             // 'order' => array('Reviews.id' => 'ASC')
+    //             'order' => 'RAND()',
+    //             'limit' => 5,
+    //         ));
+
+    //         $details['Reviews'] = $reviews;
+
+    //         Response::success($details);
+
+    //     }else{
+    //         Response::noRecords();
+    //     }
+
+    //     die;
+
+    // }
+
+
     public function showAllUsers() {
         $this->loadModel('Users');
 
@@ -289,8 +378,152 @@ class ApiController extends AppController
         $this->checkParams(['app_name','description','long_description']);
 
         $app_icon = null; // $_FILES['tmp']['app_icon'];
+        $apk_file = null; //$_FILES['tmp']['apk_file'];
 
         $this->loadModel('ReviewApps');
+
+        $pachage_name = $this->params['package_name'];
+
+        $upload_icon = UPLOAD_FOLDER_PATH.'images/'.uniqid().' '.$pachage_name.'.png';
+        $upload_apk = UPLOAD_FOLDER_PATH.'apks/'.uniqid().' '.$pachage_name.'.apk';
+
+        move_uploaded_file($app_icon,$upload_icon);
+        move_uploaded_file($apk_file,$upload_apk);
+
+        /////////// work pending /////////
+
+    }
+
+    public function login(){
+        $this->checkParams(['email','password']);
+        $this->loadModel('Users');
+
+        $user = $this->Users->find('all',array(
+            'conditions' => array('Users.email' => $this->params['email'])
+        ))->first();
+
+        if($user != null){
+            $password = $this->params['password'];
+            if($user['password'] == $password){
+                //login successfull
+                Response::success($user);
+            }else{
+                Response::AuthorizationRevoked('incorrect password');
+            }
+
+        }else{
+            Response::noRecords('user not found');
+        }
+
+        die;
+    }
+
+    public function signup(){
+        $this->checkParams(['email','password','first_name','last_name']);
+
+        //load models
+        $this->loadModel('Users');
+
+        $email_user = $this->Users->find('all',array(
+            'conditions' => array('Users.email' => $this->params['email'])
+        ))->first();
+
+        if($email_user == null){
+
+            $user = $this->Users->newEmptyEntity();
+
+            $password = Utility::EncryptPassword($this->params['password']);
+
+            $user->first_name = $this->params['first_name'];
+            $user->last_name = $this->params['last_name'];
+            $user->email = $this->params['email'];
+            $user->password = $password;
+
+            $data = $this->Users->save($user);
+            if($data){
+
+                $id = $data['id'];
+
+                $user = $this->Users->find('all',array(
+                    'conditions' => array('Users.id' => $id)
+                ))->first();
+
+                $username  = $user['first_name'].' '.$user['last_name'];
+
+                $message = Functions::getVerificationEmailTemplate($username,$user['email'],Utility::EncryptPassword($user['id']));
+                $email_data = array(
+                    'to' => $user['email'],
+                    'name'=>$username,
+                    'subject' => VERIFICATION_EMAIL_SUBJECT,
+                    'message' => $message
+                );
+
+                Utility::sendMail($data,true);
+                Response::success($user);
+
+
+            }else{
+                //
+                Response::AuthorizationRevoked('failed to register');
+            }
+
+
+        }else{
+            //user already exists
+            Response::AuthorizationRevoked("user already exists with this email");
+        }
+
+        die;
+
+    }
+
+    public function testEmail(){
+        //$message = Functions::getVerificationEmailTemplate('kulvinder','kinddusingh1k2k3@gmail.com',Utility::EncryptPassword("1"));
+        $email_data = array(
+            'to' => 'kinddusingh1k2k3@gmail.com',
+            'name'=> 'kulvinder',
+            'subject' => VERIFICATION_EMAIL_SUBJECT,
+            'message' => 'testEmail sent from localhost.'
+        );
+
+        echo json_encode(Utility::sendMail($email_data,false));
+    }
+
+
+    public function verifyEmail(){
+        $this->checkParams(['token']);
+
+        $id = Utility::DecryptPassword($this->params['token']);
+
+        $this->loadModel('Users');
+
+        $user = $this->Users->find('all',array(
+            'conditions' => array('Users.id' => $id)
+        ))->first();
+
+        if($user){
+
+            if($user['verified'] = 0){
+
+                $user->verified = 1;
+                $this->Users->save($user);
+
+                echo 'accound verified you can close this page now';
+
+
+            }else if($user['verified'] = 1){
+                //already verified
+                echo 'account already verified';
+
+            }else{
+                //account blocked or banned
+                echo 'access restricted your account has been blocked by admin';
+            }
+
+        }else{
+            //user not found
+            echo 'user not found';
+        }
 
     }
 
