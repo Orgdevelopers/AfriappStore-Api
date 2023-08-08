@@ -87,7 +87,9 @@ class ApiController extends AppController
 
     public function index()
     {
-        //Utility::sendMail(Utility::generateEmailTemplate("kinddusingh1k2k3@gmail.com",'Test','something','test'),false);
+
+
+        Utility::sendMail(Utility::generateEmailTemplate("kinddusingh1k2k3@gmail.com",'Test','something','test'),false);
 
         // echo json_encode($this->Users->find('all',array(
         //     'conditions' => array('Users.first_name' => 'test')
@@ -97,10 +99,45 @@ class ApiController extends AppController
         //     'conditions' => array('Users.first_name Like ' => '%test%')
         // ))->first());
 
+
+        //getting data from teggs :)
+        $this->loadModel('Apps');
+        echo json_encode($this->Apps->find('all',array(
+            'conditions' => array(
+                'OR' =>[
+                    ['Apps.tags Like' => '%wasstch%'],
+                    ['Apps.tags Like' => '%entertainment%']
+                ]
+                )
+        )));
+
+        die;
         echo json_encode($this->params);
 
     }
 
+    public function showAllTags(){
+        $this->loadModel('Tags');
+
+        $page = 0;
+        $records_count = ADMIN_RECORDS_PER_PAGE;
+
+        if(isset($this->params['page'])){
+            $page = $this->params['page'];
+        }
+
+        if(isset($this->params['records_count'])){
+            $records_count = $this->params['records_count'];
+        }
+
+        $categories = $this->Tags->find('all',array(
+            'offset' => $records_count*$page,
+            'limit' => $records_count,
+        ));
+
+        Response::success($categories);
+        die;
+    }
 
     public function showAllCategories(){
         $this->loadModel('Categories');
@@ -358,10 +395,38 @@ class ApiController extends AppController
                 'contain' => array('Users'),
                 // 'order' => array('Reviews.id' => 'ASC')
                 'order' => 'RAND()',
+                'limit' => 3,
+            ));
+
+            $reviews_count = $this->Reviews->find('all',array(
+                'conditions' => array('Reviews.app_id' => $id),
+                'contain' => array('Users'),
+                // 'order' => array('Reviews.id' => 'ASC')
+                'order' => 'RAND()',
                 'limit' => 5,
             ));
 
             $details['Reviews'] = $reviews;
+
+            //ratings
+            $reviews_count = array();
+            $reviews_count['1star'] = $this->Reviews->find('all',array('conditions' => array('Reviews.app_id' => $id, 'Reviews.stars' => 1 ),))->count();
+            $reviews_count['2star'] = $this->Reviews->find('all',array('conditions' => array('Reviews.app_id' => $id, 'Reviews.stars' => 2 ),))->count();
+            $reviews_count['3star'] = $this->Reviews->find('all',array('conditions' => array('Reviews.app_id' => $id, 'Reviews.stars' => 3 ),))->count();
+            $reviews_count['4star'] = $this->Reviews->find('all',array('conditions' => array('Reviews.app_id' => $id, 'Reviews.stars' => 4 ),))->count();
+            $reviews_count['5star'] = $this->Reviews->find('all',array('conditions' => array('Reviews.app_id' => $id, 'Reviews.stars' => 5 ),))->count();
+
+            $reviews_count['total'] = $reviews_count['1star']+$reviews_count['2star']+$reviews_count['3star']+$reviews_count['4star']+$reviews_count['5star'];
+
+            $rating = 0.0;
+            $stars = $reviews_count['1star']+ ($reviews_count['2star'] * 2) + ($reviews_count['3star'] * 3) + ($reviews_count['4star'] * 4) + ($reviews_count['5star'] * 5);
+            $total_stars = $reviews_count['total'] * 5;
+
+            $rating = round(($stars / $total_stars) * 5,1);
+
+            $reviews_count['actual_rating'] = $rating;
+
+            $details['reviews_count'] = $reviews_count;
 
             Response::success($details);
 
@@ -403,7 +468,7 @@ class ApiController extends AppController
         ))->first();
 
         if($user != null){
-            $password = $this->params['password'];
+            $password = Utility::EncryptPassword($this->params['password']);
             if($user['password'] == $password){
                 //login successfull
                 Response::success($user);

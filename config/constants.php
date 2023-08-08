@@ -7,6 +7,13 @@ define('APP_DATE_FORMAT', "Y-m-d H:i:s");
 define('BASE_URL','http://localhost/cakeApis/test_api2/AfriappStore-Api/');
 define('APP_NAME','Afri AppStore');
 
+// define('MAIL_HOST','smtp.titan.email');
+// define('MAIL_USERNAME','support@semahut.com');
+// define('MAIL_PASSWORD','Tictic-2023#@254');
+// define('MAIL_FROM','support@semahut.com');
+// define('MAIL_NAME','AfriApp Store');
+// define('MAIL_REPLYTO','support@semahut.com');
+
 define('MAIL_HOST','mail.afriappstore.com');
 define('MAIL_USERNAME','no-reply@afriappstore.com');
 define('MAIL_PASSWORD','no-reply@afriappstore.com');
