@@ -89,8 +89,8 @@ class ApiController extends AppController
     {
 
 
-        Utility::sendMail(Utility::generateEmailTemplate("kinddusingh1k2k3@gmail.com",'Test','something','test'),false);
-
+        //Utility::sendMail(Utility::generateEmailTemplate("kinddusingh1k2k3@gmail.com",'Test','something','test'),false);
+        //echo PHP_VERSION;
         // echo json_encode($this->Users->find('all',array(
         //     'conditions' => array('Users.first_name' => 'test')
         // ))->count());
@@ -381,6 +381,7 @@ class ApiController extends AppController
 
         $this->loadModel('Apps');
         $this->loadModel('Reviews');
+        //$this->loadModel('Users');
 
         $id = $this->params['app_id'];
 
@@ -398,13 +399,25 @@ class ApiController extends AppController
                 'limit' => 3,
             ));
 
-            $reviews_count = $this->Reviews->find('all',array(
-                'conditions' => array('Reviews.app_id' => $id),
-                'contain' => array('Users'),
-                // 'order' => array('Reviews.id' => 'ASC')
-                'order' => 'RAND()',
-                'limit' => 5,
-            ));
+            if(isset($this->params['user_id'])){
+                $user_id = $this->params['user_id'];
+
+                $my_rev = $this->Reviews->find('all',array(
+                    'conditions' => array(
+                        'Reviews.app_id' => $id,
+                        'Reviews.user_id' => $user_id
+                    ),
+                    'contain' => array('Users'),
+
+                ))->first();
+
+                if($my_rev != null){
+                    $details['user_review'] = $my_rev;
+
+                }
+
+            }
+
 
             $details['Reviews'] = $reviews;
 
@@ -499,6 +512,14 @@ class ApiController extends AppController
 
             $password = Utility::EncryptPassword($this->params['password']);
 
+            if(isset($this->params['profile_pic'])){
+                $path = UPLOAD_FOLDER_PATH.'images/'.uniqid().'.png';
+                $hash = $this->params['profile_pic'];
+
+                Utility::base64ToImage($path,$hash);
+                $user->profile_pic = $path;
+            }
+
             $user->first_name = $this->params['first_name'];
             $user->last_name = $this->params['last_name'];
             $user->email = $this->params['email'];
@@ -589,6 +610,69 @@ class ApiController extends AppController
             //user not found
             echo 'user not found';
         }
+
+    }
+
+    public function forgetPassword(){
+        $this->checkParams(['email']);
+
+        $this->loadModel('Users');
+
+        $user = $this->Users->find('all',array(
+            'conditions' => array('Users.email' => $this->params['email'])
+        ))->first();
+
+        $otp = rand(100000,999999);
+
+        if($user!=null){
+            $email_data = array(
+                'to' => $this->params['email'],
+                'name'=> $user['first_name'].' '.$user['last_name'],
+                'subject' => 'Forget Password',
+                'message' => 'Here is your Verification code for AfriappStore :- '.$otp
+            );
+
+            Utility::sendMail($email_data);
+
+            Response::success($otp.'');
+
+        }else{
+            Response::noRecords("user not found");
+        }
+        die;
+
+    }
+
+
+    public function updatePassword(){
+        $this->checkParams(['email','password']);
+        $this->loadModel('Users');
+
+        $user = $this->Users->find('all',array(
+            'conditions' => array('Users.email' => $this->params['email'])
+        ))->first();
+
+        if($user!=null){
+
+            $password = Utility::EncryptPassword($this->params['password']);
+
+            $user->password = $password;
+            $this->Users->save($user);
+            // $email_data = array(
+            //     'to' => $this->params['email'],
+            //     'name'=> $user['first_name'].' '.$user['last_name'],
+            //     'subject' => 'Forget Password',
+            //     'message' => 'Here is your Verification code for AfriappStore :- '.$otp
+            // );
+
+            // Utility::sendMail($email_data);
+
+            Response::success('password updated successfully');
+
+        }else{
+            Response::noRecords("user not found");
+        }
+        die;
 
     }
 

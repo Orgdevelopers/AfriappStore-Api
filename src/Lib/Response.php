@@ -4,7 +4,7 @@ namespace App\Lib;
 class Response {
 
     public static function success($msg){
-        echo json_encode(array('code'=>200,'msg'=>$msg));
+        echo json_encode(array('code'=>'200','msg'=>$msg));
     }
 
     public static function AuthorizationRevoked($msg = '')
